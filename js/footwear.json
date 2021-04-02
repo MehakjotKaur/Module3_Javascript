@@ -1,0 +1,62 @@
+{
+  "companyName": "Jimmy Choo",
+  "headOffice": "London, United Kingdom",
+  "active": true,
+  "womenFootwears": [
+    {
+      "name": "Joeezie Flat",
+      "itemNumber": "JOEZIEFLATZMZ",
+      "description":"'Black Nappa Leather Flats with Silver Dome Studs'",
+      "features": [
+        "Nappa leather",
+        "Squared-toe"
+      ],
+      "price": "C$650",
+      "image": "joezieFlat.jpg"
+    },
+    {
+      "name": "Maelie 70",
+      "itemNumber": "MAELIE70NKE",
+      "description":"'Dark Olive Snake Printed Leather Thong Mules'",
+      "features": [
+        "Snake printed leather",
+        "Strap detailing"
+],
+      "price": "C$750",
+      "image": "maelie70.jpg"
+    },
+    {
+      "name": "Bing 100",
+      "itemNumber": "BING100PAT",
+      "description":"'Ballet Pink Patent Leather Mules with Crystal Strap'",
+      "features": [
+        "Patent leather",
+        "Leather lined"
+],
+      "price": "C$1,150",
+      "image": "bing100.jpg"
+    },
+    {
+      "name": "Danica 110",
+      "itemNumber": "DANICA110WAH",
+      "description":"'Sand Dune Suede Espadrille Wedges with Pearls and Studs'",
+      "features": [
+        "Suede",
+        "Buckle fastening at ankle"
+],
+      "price": "C$825",
+      "image": "danica110.jpg"
+    },
+    {
+      "name": "Romy 60",
+      "itemNumber": "ROMY60BRE",
+      "description":"'Silver and Dusk Blue Fireball Glitter Dégradé Fabric Pointy Toe Pumps'",
+      "features": [
+        "Glitter degrade fabric",
+        "Leather sole"
+],
+      "price": "C$925",
+      "image": "romy60.jpg"
+    }
+  ]
+}
