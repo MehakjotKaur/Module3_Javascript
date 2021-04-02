@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Prototypes | COMP1073 Client-Side JavaScript</title>
+
+</head>
+
+<body>
+    <div id="myData"></div>
+	<!-- STEP 1: Build out a HEADER and a SECTION element -->
+    <script>
+        fetch('https://raw.githubusercontent.com/JessicaGilfillan/COMP1073-Winter2021-CodeExamples-Student/main/week-9/example-3/js/i-scream.json')
+        .then(function(resp){
+            return resp.json();
+        })
+        .then(function(data){
+            appendData(data);
+        });
+        function appendData(data){
+            let main = document.getElementById("myData");
+            
+                let div = document.createElement("div");
+                div.innerHTML = 
+                "Name:" + data.companyName;
+                main.appendChild(div);
+            
+        }
+        </script>
+</body>
+</html>
