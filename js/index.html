@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Prototypes | COMP1073 Client-Side JavaScript</title>
+
+</head>
+
+<body>
+    <div id="myData"></div>
+    <div id="myData1"></div>
+	<!-- STEP 1: Build out a HEADER and a SECTION element -->
+    <script>
+        fetch('https://raw.githubusercontent.com/MehakjotKaur/module_3/main/footwear.json')
+        .then(function(resp){
+            return resp.json();
+        })
+        .then(function(data){
+            appendData(data);
+        });
+        function appendData(data){
+            let main = document.getElementById("myData");
+            let div = document.createElement("div");
+            div.innerHTML="Company Name:"+"  "+data.companyName
+            +"  "+ " is having their main head office located  at"+ "  "+
+            data.headOffice+","+"  "+"Active Status:"+" "+data.active ;
+            main.appendChild(div);
+
+              let a= data.womenFootwears.length;
+              let j=0;
+              for(let i=0;i < a;i++){
+                let div = document.createElement("div");
+
+              div.innerHTML=++j+": "+"Item Name:"+" "+data.womenFootwears[i].name+"<br> "+"Item Number:"+
+              data.womenFootwears[i].itemNumber+"<br> "+"Little Description:"+" "+
+              data.womenFootwears[i].description+"<br> "+" Features: "
+              +" "+data.womenFootwears[i].features+"<br> "+"Price:"+" "+
+              data.womenFootwears[i].price;
+              main.appendChild(div);
+              
+              }
+                 
+              
+
+        
+
+
+             
+}
+
+
+        </script>
+</body>
+</html>
